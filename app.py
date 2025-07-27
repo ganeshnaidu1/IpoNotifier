@@ -17,8 +17,7 @@ async def root():
     weekday = now.weekday()  # Monday=0, Sunday=6
     current_time = now.strftime("%H:%M")
      # Only run on weekdays (Monday=0 to Friday=4) between 12:00 PM and 4:00 PM
-    # if weekday < 5 and "12:00" <= current_time <= "16:00":
-    if True:
+    if weekday < 5 and "12:00" <= current_time <= "16:00":
         try:
             # Run IPO analysis
             ll = GroqLlm()
