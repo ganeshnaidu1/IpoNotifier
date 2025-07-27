@@ -22,6 +22,7 @@ async def root():
         graph = GraphBuilder(llm)
         graph = graph.build_graph()
         result = graph.invoke({})
+        
         return {"message": result["formatted_output"].content}
     else:
         return {"message": f"Analysis only runs on weekdays at 12:00 PM. Current time: {now.strftime('%A, %H:%M')}"}
