@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-openai
+langchain-core
+langchain-anthropic
+langchain-google-genai
+fastapi
+langgraph
+uvicorn
+langchain-groq
+langchain-perplexity
+python-dotenv
